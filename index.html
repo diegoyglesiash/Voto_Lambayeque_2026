@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>¿Por qué Lambayeque sigue siendo PRO KEIKO? | Análisis territorial del voto</title>
+  <meta name="description" content="Análisis territorial del voto en Lambayeque: pobreza, identidad étnica y el fenómeno fujimorista explicado con datos distritales.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Progress Bar -->
+  <div class="progress-bar" id="progressBar"></div>
+
+  <!-- Navigation -->
+  <nav class="nav-bar" id="navBar">
+    <div class="nav-inner">
+      <a href="#regla-de-oro" class="nav-link">La Regla</a>
+      <a href="#centros-urbanos" class="nav-link">Centros Urbanos</a>
+      <a href="#pobreza" class="nav-link">Pobreza</a>
+      <a href="#clivajes" class="nav-link">Clivajes</a>
+      <a href="#conclusiones" class="nav-link">Conclusiones</a>
+      <a href="#datos" class="nav-link">Datos</a>
+    </div>
+  </nav>
+
+  <!-- Tooltip -->
+  <div class="tooltip" id="tooltip"></div>
+
+  <!-- ==================== HERO ==================== -->
+  <section class="hero" id="hero">
+    <div class="hero-badge"><span class="dot"></span> Elecciones 2026 · Lambayeque</div>
+    <h1>¿Por qué Lambayeque sigue siendo <span class="highlight">PRO KEIKO?</span></h1>
+    <p class="hero-subtitle">Desmenuzando el voto a nivel territorial: pobreza, identidad étnica y la paradoja de un dominio que no es lo que parece.</p>
+    <a href="#regla-de-oro" class="hero-cta">Empezar el recorrido <span class="arrow">↓</span></a>
+    <div class="hero-scroll-hint">
+      <svg width="24" height="24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- ==================== ACT 1: LA REGLA DE ORO ==================== -->
+  <div class="section-divider" data-section="regla-de-oro" id="regla-de-oro">
+    <span class="section-label">Capítulo 1</span>
+  </div>
+
+  <section class="section">
+    <div class="text-block">
+      <h2>La Regla de Oro: Eficiencia antes que Mayorías</h2>
+      <p class="lead">Las elecciones de 2026 dejaron una fotografía familiar en el norte del Perú: Keiko Fujimori pinta de naranja el mapa de Lambayeque. Un naranja tan acostumbrado que, elección tras elección, pareciera su color favorito.</p>
+    </div>
+
+    <div class="text-block">
+      <p>Sin embargo, este análisis permite una interpretación distinta. <strong style="color:var(--orange-light)">Lambayeque no tiene una fascinación por Keiko</strong>, y para demostrar eso debemos analizar la región a nivel distrital.</p>
+    </div>
+
+    <div class="text-block">
+      <h3>El primer dato que rompe el cerebro es una paradoja:</h3>
+      <div class="big-number-block">
+        <div class="big-number"><span class="counter" data-target="26" data-suffix="%" data-decimals="0">0%</span></div>
+        <p class="big-number-desc">de los votos en toda región. De cada 10 personas, solo 2 o 3 votaron por Keiko</p>
+      </div>
+      <p>El fujimorismo ha dominado una regla implícita en Lambayeque: <strong style="color:var(--text-primary)">quien conquista los centros urbanos más densos, se lleva la corona regional</strong>. En esta elección, la extrema atomización de los rivales — donde casi todos obtuvieron apenas un 1% de los votos — le permitió avanzar con comodidad.</p>
+    </div>
+
+    <!-- Atomization Bar Chart -->
+    <div class="text-block">
+      <div class="chart-container">
+        <div class="chart-title">Distribución de votos en Lambayeque por candidato</div>
+        <div class="bar-chart" id="atomizationBars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACT 2: CENTROS URBANOS ==================== -->
+  <div class="section-divider" data-section="centros-urbanos" id="centros-urbanos">
+    <span class="section-label">Capítulo 2</span>
+  </div>
+
+  <section class="section">
+    <div class="text-block">
+      <h2>Los 5 distritos que deciden todo</h2>
+      <p class="lead">Al analizar los cinco distritos que concentran el 50% del electorado, observamos que Keiko no necesita superar el 30% en las grandes ciudades para asegurar el triunfo regional.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="stat-row cols-2">
+        <div class="stat-card">
+          <div class="stat-number"><span class="counter" data-target="5" data-decimals="0">0</span></div>
+          <div class="stat-label">Distritos clave</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">~<span class="counter" data-target="50" data-suffix="%" data-decimals="0">0%</span></div>
+          <div class="stat-label">Del electorado</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <div class="chart-container">
+        <div class="chart-title">Top 5 distritos por volumen electoral · % Keiko en paréntesis</div>
+        <div class="bar-chart" id="top5Bars"></div>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <div class="key-insight">
+        <h4>Hallazgo clave</h4>
+        <p>Si en los grandes centros urbanos solo existieran <strong>10 personas</strong>, Keiko con solo tener a <strong>3 ciudadanos</strong> asegura su victoria en toda la región.</p>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p>Por lo tanto, Keiko gana por la conquista de un grupo <em>no representativo</em> de la población. Por lo tanto, la siguiente sección busca analizar a dichos grupos distribuidos por los distritos de nuestra región.</p>
+    </div>
+  </section>
+
+  <!-- ==================== ACT 3: POBREZA ==================== -->
+  <div class="section-divider" data-section="pobreza" id="pobreza">
+    <span class="section-label">Capítulo 3</span>
+  </div>
+
+  <section class="section">
+    <div class="text-block">
+      <h2>La figura de la pobreza urbana</h2>
+      <p class="lead">A nivel nacional existe una asociación entre la pobreza de las grandes ciudades de la costa y el voto por Keiko Fujimori. Este análisis lo lleva al nivel regional, usando los 38 distritos de Lambayeque como unidad.</p>
+    </div>
+
+    <div class="text-block">
+      <div class="chart-container">
+        <div class="chart-title">Pobreza monetaria distrital (Top 10)</div>
+        <div class="bar-chart" id="povertyBars"></div>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <h3>Correlación inicial: resultado moderado</h3>
+      <p>Se realizó una correlación entre el % de votos por Keiko y el % de pobreza distrital. El primer resultado arrojó una <strong style="color:var(--text-primary)">correlación moderada</strong>.</p>
+      <p>Pero algo llamó la atención: dos puntos aparecían en la parte inferior de la gráfica — los distritos con la <em>mayor pobreza</em> pero los <em>menores votos</em> por Keiko.</p>
+    </div>
+
+    <!-- Scatter Plot -->
+    <div class="text-block">
+      <div class="chart-container">
+        <div class="chart-title">Pobreza (eje X) vs. Voto por Keiko (eje Y) · Toca para explorar</div>
+        <div class="scatter-wrapper" id="scatterPlot">
+          <span class="scatter-axis-x">→ Pobreza (%)</span>
+          <span class="scatter-axis-y">→ Voto Keiko (%)</span>
+        </div>
+        <p style="font-size:0.7rem; color:var(--text-muted); margin-top:10px; text-align:center;">
+          🟠 Tamaño: Votos Obtenidos en el Distrito
+        </p>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <h3>¿Qué sucedió con Cañaris e Incahuasi?</h3>
+      <p>Estos dos distritos son los que presentan el <strong style="color:var(--text-primary)">mayor porcentaje de autopercepción quechua</strong> en toda la región, siendo esto una barrera para candidaturas que no los representan étnicamente.</p>
+      <div class="stat-row cols-2" style="margin-top:20px;">
+        <div class="stat-card" style="border-top:3px solid #8b5cf6;">
+          <div class="stat-number" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa);-webkit-background-clip:text;"><span class="counter" data-target="75.80" data-suffix="%" data-decimals="1">0%</span></div>
+          <div class="stat-label">Quechua en Cañaris</div>
+        </div>
+        <div class="stat-card" style="border-top:3px solid #8b5cf6;">
+          <div class="stat-number" style="background:linear-gradient(135deg,#8b5cf6,#a78bfa);-webkit-background-clip:text;"><span class="counter" data-target="79.17" data-suffix="%" data-decimals="1">0%</span></div>
+          <div class="stat-label">Quechua en Incahuasi</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACT 4: CLIVAJES ==================== -->
+  <div class="section-divider" data-section="clivajes" id="clivajes">
+    <span class="section-label">Capítulo 4</span>
+  </div>
+
+  <section class="section">
+    <div class="text-block">
+      <h2>Teoría de los Clivajes Territoriales</h2>
+    </div>
+
+    <div class="text-block">
+      <div class="callout theory">
+        <strong>🟣 ¿Qué es un clivaje?</strong><br><br>
+        Un clivaje es una <strong>división social profunda</strong> que se refleja de forma estable en el voto.<br><br>
+        En el Perú, uno de los más importantes es el <strong>centro–periferia</strong>.<br><br>
+        Para que exista un clivaje:<br>
+        <span style="display:block;padding-left:16px;margin-top:6px;">• Hay diferencias reales entre grupos</span>
+        <span style="display:block;padding-left:16px;">• Esas diferencias generan identidad</span>
+        <span style="display:block;padding-left:16px;">• La identidad se traduce en cómo votan</span>
+      </div>
+    </div>
+
+    <div class="text-block">
+      <div class="callout">
+        <strong>🟠 ¿Por qué los distritos quechuas en Lambayeque votan distinto?</strong><br><br>
+        <strong style="color:var(--orange-light)">Identidad + exclusión cambian el voto</strong><br><br>
+        Los distritos quechuas forman parte de la periferia:<br>
+        <span style="display:block;padding-left:16px;margin-top:6px;">• Menor integración al mercado</span>
+        <span style="display:block;padding-left:16px;">• Fuerte identidad cultural</span><br>
+        Por eso, no siguen el patrón general. Se cruzan dos dimensiones:<br><br>
+        <strong>🏙️ Zonas más integradas (urbanas):</strong><br>
+        voto más influido por factores económicos<br><br>
+        <strong>🏔️ Zonas menos integradas (quechuas):</strong><br>
+        voto influido por identidad y representación<br><br>
+        <strong>👉 Resultado:</strong><br>
+        cuando la identidad es fuerte y la integración es baja, los votantes tienden a rechazar candidatos que no los representan.
+      </div>
+    </div>
+
+    <div class="text-block">
+      <p style="font-size:0.75rem; color:var(--text-muted); font-style:italic; border-left:2px solid var(--border-color); padding-left:12px;">Referencia: Barrenechea, R., & Encinas, D. (2025). <em>Clivajes sin partidos: el populismo y sus votantes en Perú</em>. América Latina Hoy, 95, e32458.</p>
+    </div>
+
+    <div class="text-block">
+      <h3>Nueva correlación: resultado contundente</h3>
+      <p>Al excluir los distritos con autopercepción quechua mayor al 70%, se obtuvo un nuevo resultado:</p>
+      <div class="big-number-block">
+        <div class="big-number"><span class="counter" data-target="0.79" data-decimals="2">0</span></div>
+        <p class="big-number-desc">Correlación positiva muy fuerte entre la pobreza distrital urbana y el voto hacia Keiko.</p>
+      </div>
+    </div>
+
+    <!-- Spearman Correlation Scatter -->
+    <div class="text-block">
+      <div class="chart-container">
+        <div class="chart-title">Correlación de Spearman: Pobreza vs. Voto por Keiko (sin distritos quechuas)</div>
+        <div class="scatter-wrapper" id="spearmanPlot">
+          <span class="scatter-axis-x">→ Pobreza (%)</span>
+          <span class="scatter-axis-y">→ Voto Keiko (%)</span>
+        </div>
+        <p style="font-size:0.7rem; color:var(--text-muted); margin-top:10px; text-align:center;">
+          🟠 Distritos No Quechuas &nbsp;&nbsp; 🟣 Distritos Quechuas
+        </p>
+        <p style="font-size:0.65rem; color:var(--text-muted); margin-top:8px; text-align:center; font-style:italic;">
+          Nota: Se clasifican como distritos quechuas aquellos con una autoidentificación étnica quechua superior al 70% de su población censada.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACT 5: CONCLUSIONES ==================== -->
+  <div class="section-divider" data-section="conclusiones" id="conclusiones">
+    <span class="section-label">Capítulo 5</span>
+  </div>
+
+  <section class="section">
+    <div class="text-block">
+      <h2>Conclusiones</h2>
+    </div>
+
+    <div class="text-block">
+      <div class="callout" style="border-left-color:#ef4444;">
+        <strong style="color:#f87171;">🔴 Keiko no necesita grandes mayorías para ganar</strong><br><br>
+        El fujimorismo gana concentrando el voto en los principales centros urbanos. No necesita mayoría absoluta: dominar los distritos clave es suficiente para asegurar toda la región.
+      </div>
+    </div>
+
+    <div class="text-block">
+      <div class="callout">
+        <strong style="color:var(--orange-light);">🟠 La fragmentación reduce la competencia real</strong><br><br>
+        La atomización de candidatos (muchos con votaciones mínimas) disminuye el umbral necesario para ganar.
+      </div>
+    </div>
+
+    <div class="text-block">
+      <div class="callout" style="border-left-color:#eab308;">
+        <strong style="color:#facc15;">🟡 La pobreza vota distinto según el territorio</strong><br><br>
+        La pobreza no tiene un efecto único:<br><br>
+        <strong>🏙️ En zonas urbanas/mestizas</strong>, refuerza el voto hacia Keiko<br><br>
+        <strong>🏔️ En zonas periféricas/quechuas</strong>, genera rechazo y voto alternativo
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ACT 6: DATOS ==================== -->
+  <div class="section-divider" data-section="datos" id="datos">
+    <span class="section-label">Datos</span>
+  </div>
+
+  <section class="section">
+    <div class="text-block">
+      <h2>Explora los datos por distrito</h2>
+      <p>Los 38 distritos de Lambayeque con sus principales indicadores electorales y sociales. Filtra y ordena para descubrir patrones.</p>
+    </div>
+
+    <div class="text-block">
+      <input type="text" class="table-search" id="tableSearch" placeholder="🔍 Buscar distrito...">
+      <div class="sort-controls">
+        <button class="sort-btn active" data-sort="votes">Votos</button>
+        <button class="sort-btn" data-sort="keiko">% Keiko</button>
+        <button class="sort-btn" data-sort="poverty">Pobreza</button>
+        <button class="sort-btn" data-sort="quechua">Quechua</button>
+        <button class="sort-btn" data-sort="population">Población</button>
+      </div>
+      <div class="data-table-wrapper">
+        <table class="data-table" id="districtTable">
+          <thead>
+            <tr>
+              <th>Distrito</th>
+              <th>% Keiko</th>
+              <th>Pobreza</th>
+              <th>Votos</th>
+              <th>Población</th>
+              <th>Quechua</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <p>Este análisis se construyó con datos de los resultados electorales de la ONPE al 96% de las actas procesadas, pobreza monetaria distrital (INEI 2018), población distrital y autoidentificación étnica (Censo Nacional 2017).</p>
+    <p>Investigación y análisis por <span class="author">Diego Yglesias Huertas</span></p>
+    <a href="#hero" class="back-to-top">↑ Volver al inicio</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
